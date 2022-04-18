@@ -1,0 +1,36 @@
+<Reveal>:
+    id: main_win
+    canvas.before:
+        Color:
+            rgb: (1,.6,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+<RevealTop>:
+    id: main_win
+    canvas.before:
+        Color:
+            rgb: (0,0,.6,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+<RevealBottom>:
+    id: main_win
+    canvas.before:
+        Color:
+            rgb: (1,1,1,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    AnchorLayout:
+        anchor_x: "right"
+        anchor_y: "top"
+
+        BoxLayout:
+            id: parent_bottom
+            size_hint_x: .5
+
+            Button:
+                text: "Del"
+            Button: 
+                text: "Copy"
